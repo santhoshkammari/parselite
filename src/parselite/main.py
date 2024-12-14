@@ -76,6 +76,6 @@ class FastParser:
         else:
             return url
 
-def parse(urls:list|str) -> list|str:
-    parser = FastParser()
+def parse(urls:list|str,allow_pdf_extraction=True) -> list|str:
+    parser = FastParser(extract_pdf=allow_pdf_extraction)
     return parser(urls)
