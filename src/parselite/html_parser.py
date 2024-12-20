@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 
 
 class FastHTMLParserV3:
-    @lru_cache
+
     async def _fetch_url(self, session, url, url_fetch_timeout=10):
         if self._is_avoid_urls(url):
             return ""
