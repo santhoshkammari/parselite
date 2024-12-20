@@ -1,2 +1,2 @@
 from .main import parse
-from .main import FastParser
+from .main import FastParser,FastParserResult
